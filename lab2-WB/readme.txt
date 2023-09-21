@@ -18,12 +18,14 @@ In cover-container for cover page
 --external style sheet
 --added media screen for the gallery container
 --added external css called certi-css.css
+--added audio and video here 
 
 
 3.projects.html
 --used media query with column layout structure for defining the projects
 --home button
 --external style sheet
+--used summary
 
 4.skills.html
 --home button
