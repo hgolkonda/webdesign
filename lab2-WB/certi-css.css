@@ -1,0 +1,55 @@
+/* Base styles for the gallery container */
+@media screen and (min-width: 350px){
+
+}.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styles for individual image figures */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for images within the figures */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for figure captions */
+.gallery-item figcaption {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect styles */
+.gallery-item:hover {
+    transform: scale(1.05); /* Enlarge the image figure on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.gallery-item:hover figcaption {
+    opacity: 1; /* Show the caption on hover */
+}

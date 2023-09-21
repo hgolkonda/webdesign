@@ -1,0 +1,138 @@
+
+.cover-image {
+    width: 100%; /* Cover the entire width of the container */
+    height: auto; /* Maintain aspect ratio */
+   
+    background-size: cover; /* Scale the image to cover the container */
+    background-position: center; /* Center the image horizontally and vertically */
+    /* Add other base styles as needed */
+}
+
+
+/* Media query for screens larger than 768px (e.g., tablets) */
+@media screen and (min-width: 350px) {
+    .cover-image {
+        /* Adjust properties for tablets */
+        height: 400px; /* Set a specific height */
+    }
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .cover-image {
+        /* Adjust properties for mobile devices */
+        height: 200px; /* Set a different height */
+        background-position: top; /* Align image to the top */
+    }
+}
+
+
+.navbar {
+    position: absolute;
+    top: 70px; /* Adjust top and right values as needed */
+    right: 200px;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: rgba(168, 166, 166, 0.5);
+    color: #686666;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 5px; /* Adjust spacing between links as needed */
+}
+
+.navbar a:hover {
+    background-color: rgba(102, 99, 99, 0.7);
+}
+/* Base styles for the column container */
+.column-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row */
+    justify-content: space-between; /* Distribute columns with space between them */
+}
+
+/* Base styles for columns */
+.column {
+    flex: 1; /* Each column takes an equal part of the available space */
+    min-width: calc(33.33% - 10px); /* Minimum width for each column (adjust as needed) */
+    margin: 5px; /* Add some spacing between columns */
+    background-color: #0e0d0d;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: calc(50% - 10px); /* Two columns per row on smaller screens */
+    }
+}
+
+
+
+/* Base styles for the cover container */
+.cover-container {
+    float:left;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cover-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the cover footer */
+.footer {
+    position: absolute;
+    bottom: 4px;
+    right: 100px;
+        color: #070707;
+    padding: 4px;
+    display: flex; /* Arrange the links side by side */
+}
+
+.footer a {
+    text-decoration: none;
+        color: #0a0a0a;
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+
+
+a {
+    text-decoration:none;
+    
+    color: #050505;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 350px){
+ table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+}
+th {
+    background-color: #19191a;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+a{
+    text-decoration: underline; 
+ }
