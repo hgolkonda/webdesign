@@ -1,0 +1,61 @@
+@import "variables";
+body {
+    background-image: $background-image; // Apply background image
+    background-size: cover; // Adjust background size as needed
+    background-repeat: no-repeat; // Prevent background image from repeating
+    background-attachment: fixed;
+    background-color: lavender;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+}
+
+header {
+  text-align: center;
+}
+#container {  
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+    margin-left: 390px;
+    display: flexbox;
+}
+
+//placeholder selectors
+%hover-effect {
+    border-radius: 5px;
+    box-shadow: 5px -5px $hover-color;
+    border: 1px solid $hover-color;
+  
+    a:hover, a:hover:visited {
+      color: red;
+    }
+  }
+
+//Nesting
+.gallery {
+    flex-direction: row;
+    width: 750px;
+    height: 150px;
+    border: 1px solid rgb(251, 250, 250);
+    text-align: center;
+   
+
+  img {
+    width: 750px;
+    height: 150px;
+  }
+  &:hover {
+    @extend %hover-effect;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color:white;
+  color: rgb(232, 133, 243);
+  font-size: 14px;
+  margin-top: 230px;
+}
