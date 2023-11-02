@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("/img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+#stopwatch {
+    font-size: 36px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#datepicker {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#controls {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: #682c04;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b0b0b;
+}

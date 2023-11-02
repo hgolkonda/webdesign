@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculator</h2>
+            <div>
+                <p>Welcome, <span id="username"></span>!</p>
+            </div>
+            <div>
+                <label for="number1">Number 1:</label>
+                <input type="text" class="form-control" id="number1">
+                <div class="error" id="number1Error"></div>
+            </div>
+            <div>
+                <label for="number2">Number 2:</label>
+                <input type="text" class="form-control" id="number2">
+                <div class="error" id="number2Error"></div>
+            </div>
+            <button class="btn btn-primary" data-operation="add">Add</button>
+            <button class="btn btn-primary" data-operation="subtract">Subtract</button>
+            <button class="btn btn-primary" data-operation="multiply">Multiply</button>
+            <button class="btn btn-primary" data-operation="divide">Divide</button>
+            <div>
+                <label for="result">Result:</label>
+                <input type="text" class="form-control" id="result" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+      <script src="js/calc.js"></script>
+</body>
+
+</html>

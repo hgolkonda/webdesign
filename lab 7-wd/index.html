@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="./css/style.css">
+     
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Login</h2>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <span id="emailError" class="invalid-input"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User Name*</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                        <span id="usernameError" class="invalid-input"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password*</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <span id="passwordError" class="invalid-input"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password*</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                        <span id="confirmPasswordError" class="invalid-input"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="loginButton" disabled>Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="js/index.js">
+    </script>
+   
+</body>
+
+</html>
