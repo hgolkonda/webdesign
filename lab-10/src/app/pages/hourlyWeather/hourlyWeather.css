@@ -1,0 +1,11 @@
+.timeWeather{
+    text-align: center;
+    justify-content: center;
+    width: 900px;
+    margin:10px auto;
+}
+
+.timeWeather ul li{
+    list-style: none;
+    margin-top:10px;
+}
